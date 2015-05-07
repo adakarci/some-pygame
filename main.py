@@ -6,28 +6,20 @@ from pygame.locals import *
 pygame.init()
 pygame.display.set_caption("We have a party")
 screen = pygame.display.set_mode((850, 550))
-
 partygirl1 = pygame.Surface((850, 550)).convert_alpha()
 partygirl2 = pygame.Surface((850, 550)).convert_alpha()
 partyboy = pygame.Surface((850, 550)).convert_alpha()
-
 musicnota = pygame.Surface((850, 550)).convert_alpha()
 musicnota.fill((0, 0, 0, 0))
-
 updatedLights = pygame.Surface((850, 550)).convert_alpha()
-
-
 updatedLights.fill((255, 0, 0, 0))
 partygirl1.fill((255, 0, 0, 0))
 partygirl2.fill((0, 0, 0, 0))
 partyboy.fill((0, 0, 0, 0))
 screen.fill((0, 0, 0, 0))
 musicnota.fill((0, 0, 0, 0))
-
 background = pygame.surface.Surface((850, 550))
-
 background.fill((0, 0, 0))
-
 #background
 pygame.draw.polygon(
     background, (148, 123, 90), ((0, 550), (50, 320), (800, 320), (850, 550)))
@@ -57,16 +49,13 @@ pygame.draw.polygon(partygirl1, (0, 197, 205), ((
 #eyes
 pygame.draw.circle(partygirl1, (255, 255, 255), (140, 235), 7)
 pygame.draw.circle(partygirl1, (255, 255, 255), (170, 235), 7)
-
 pygame.draw.circle(partygirl1, (160, 82, 45), (140, 235), 4)
 pygame.draw.circle(partygirl1, (160, 82, 45), (170, 235), 4)
-
 #leftarm
 pygame.draw.line(partygirl1, (0, 0, 0), (155, 300), (95, 330), 10)
 #lip
 pygame.draw.polygon(
     partygirl1, (205, 0, 0), ((135, 258), (160, 268), (175, 258)))
-
 #eyebrown
 pygame.draw.line(partygirl1, (0, 0, 0), (123, 218), (133, 230), 3)
 pygame.draw.line(partygirl1, (0, 0, 0), (135, 215), (135, 228), 3)
@@ -125,12 +114,9 @@ pygame.draw.ellipse(partygirl2, (255, 228, 19), (675, 260, 10, 10), 4)
 pygame.draw.ellipse(partygirl2, (255, 228, 19), (595, 220, 10, 10), 4)
 pygame.draw.ellipse(partygirl2, (255, 228, 19), (595, 240, 10, 10), 4)
 pygame.draw.ellipse(partygirl2, (255, 228, 19), (595, 260, 10, 10), 4)
-
-
 #eyes
 pygame.draw.circle(partygirl2, (255, 255, 255), (627, 235), 7)
 pygame.draw.circle(partygirl2, (255, 255, 255), (650, 235), 7)
-
 pygame.draw.circle(partygirl2, (0, 205, 0), (627, 235), 4)
 pygame.draw.circle(partygirl2, (0, 205, 0), (650, 235), 4)
 #lip
@@ -157,7 +143,6 @@ pygame.draw.line(background, (0, 0, 0), (530, 0), (530, 20), 10)
 pygame.draw.line(background, (0, 0, 0), (630, 0), (630, 20), 10)
 pygame.draw.line(background, (0, 0, 0), (730, 0), (730, 20), 10)
 pygame.draw.line(background, (0, 0, 0), (830, 0), (830, 20), 10)
-
 lights = []
 
 
@@ -230,10 +215,7 @@ pygame.draw.polygon(Arm3, (
 pygame.draw.polygon(Arm3, (
     73, 23, 0), ((240, 403), (240, 325), (210, 325), (210, 403)))
 Arm3Area = Arm3.subsurface(pygame.Rect((125, 250), (110, 110)))
-
-
 y = 10
-k = 130
 counter = 0
 clock = pygame.time.Clock()
 while True:

@@ -28,9 +28,6 @@ background = pygame.surface.Surface((850, 550))
 
 background.fill((0, 0, 0))
 
-background_colour = (255, 255, 255)
-(width, height) = (850, 550)
-
 #background
 pygame.draw.polygon(
     background, (148, 123, 90), ((0, 550), (50, 320), (800, 320), (850, 550)))
